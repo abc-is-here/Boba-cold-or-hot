@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Chewy", cursive;
+  cursor: none !important;
+  height: 100vh;
+    overflow: hidden;
+}
+
+.cursor {
+  position: fixed;
+  width: 32px;
+  height: 32x;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+}
+
+h1 span {
+  -webkit-text-stroke: 2px black;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+h1 span:hover {
+  background-image: url("fire.gif");
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+    margin-top: 10px;
+    letter-spacing: 5px;
+}
+
+.snowflakes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.snowflake {
+  position: absolute;
+  font-size: 24px;
+  color: white;
+  animation: fall linear infinite;
+  user-select: none;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10%) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(2010%) rotate(360deg);
+    opacity: 0.3;
+  }
+}
+
+.snowflake:nth-child(1) {
+  left: 5%;
+  animation-duration: 3s;
+  font-size: 16px;
+}
+.snowflake:nth-child(2) {
+  left: 15%;
+  animation-duration: 2.5s;
+  font-size: 20px;
+}
+.snowflake:nth-child(3) {
+  left: 25%;
+  animation-duration: 3.5s;
+  font-size: 18px;
+}
+.snowflake:nth-child(4) {
+  left: 35%;
+  animation-duration: 2.2s;
+  font-size: 22px;
+}
+.snowflake:nth-child(5) {
+  left: 45%;
+  animation-duration: 2.8s;
+  font-size: 14px;
+}
+.snowflake:nth-child(6) {
+  left: 55%;
+  animation-duration: 2.6s;
+  font-size: 24px;
+}
+.snowflake:nth-child(7) {
+  left: 65%;
+  animation-duration: 3s;
+  font-size: 18px;
+}
+.snowflake:nth-child(8) {
+  left: 75%;
+  animation-duration: 2.4s;
+  font-size: 20px;
+}
+.snowflake:nth-child(9) {
+  left: 85%;
+  animation-duration: 2.7s;
+  font-size: 22px;
+}
+.snowflake:nth-child(10) {
+  left: 95%;
+  animation-duration: 2.3s;
+  font-size: 16px;
+}
+
+.p1{
+    font-size: 6rem;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Rubik Dirt", sans-serif;
+}
+
+.p1 span {
+  -webkit-text-stroke: 2px blue;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+img{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+h1{
+    text-shadow: 5px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+marquee{
+    font-size: 2rem;
+    color: white;
+    font-family: "Rubik Dirt", sans-serif;
+}
